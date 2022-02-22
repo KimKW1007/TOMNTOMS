@@ -1,0 +1,959 @@
+@charset "UTF-8";
+
+
+
+/* =========================== main start =========================== */
+#wrap #main{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-top: 137px;
+}
+#wrap #main #section1{
+  width: 100%;
+  height: 800px;
+}
+/* s1 Slider */
+#wrap #main #section1 .slide_container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .slide_container .slide_view{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#wrap #main #section1 .slide_container .slide_view .slide_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .slide_container .slide_view .slide_wrap .slide{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 1903px;
+  height: 100%;
+  display: none;
+}
+#wrap #main #section1 .slide_container .slide_view .slide_wrap .slide1{
+  background: url(../img/slide1.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+}
+#wrap #main #section1 .slide_container .slide_view .slide_wrap .slide2{
+  background: url(../img/slide2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#wrap #main #section1 .slide_container .slide_view .slide_wrap .slide3{
+  background: url(../img/slide3.jpg) no-repeat center center;
+  background-size: cover;
+}
+#wrap #main #section1 .slide_container .slide_view .slide_wrap .slide4{
+  background: url(../img/slide4.jpg) no-repeat center center;
+  background-size: cover;
+}
+/* s1 Now Numver */
+#wrap #main #section1 .slide_container .indicator{
+  position: absolute;
+  bottom: 31px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Titillium Web',Arial,sans-serif;
+  font-size: 18px;
+  width: 100%;
+  max-width: 1400px;
+  height: 26px;
+  font-weight: 600;
+  display: flex;
+}
+#wrap #main #section1 .slide_container .indicator .num{
+  color: #000;
+}
+#wrap #main #section1 .slide_container .indicator .num .now{
+  display: inline-block;
+}
+#wrap #main #section1 .slide_container .indicator .num p{
+  display: inline-block;
+}
+#wrap #main #section1 .slide_container .indicator .num .slide_length{
+  display: inline-block;
+}
+/* s1 Indicator */
+#wrap #main #section1 .slide_container .indicator .indicator_inner{
+  margin-left: 20px;
+  margin-top: -4px;
+}
+#wrap #main #section1 .slide_container .indicator .indicator_inner .page_btn{
+  display: inline-block;
+  width: 100.5px;
+  height: 2px;
+  margin-right: 2px;
+  background: #fff;
+  border-radius: 50%;
+  transition: background .3s;
+}
+#wrap #main #section1 .slide_container .indicator .indicator_inner .page_btn.active{
+  background: #000;
+}
+/* s1 Play & Pause Button */
+#wrap #main #section1 .slide_container .indicator .play_box{
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  width: 30px;
+  height: 20px;
+}
+#wrap #main #section1 .slide_container .indicator .play_box span{
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+#wrap #main #section1 .slide_container .indicator .play_box span a{
+  display: none;
+}
+#wrap #main #section1 .slide_container .indicator .play_box span .pause.show{
+  display: block;
+}
+#wrap #main #section1 .slide_container .indicator .play_box span .play.show{
+  display: block;
+}
+
+/* ===================== section1 end ===================== */
+/* ==================== section2 start ==================== */
+#wrap #main #section2{
+  width: 100%;
+  height: 70px;
+  background: #572a31;
+}
+#wrap #main #section2 .container{
+  width: 100%;
+}
+#wrap #main #section2 .container .slide_view{
+  position: relative;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+}
+#wrap #main #section2 .container .slide_view::before{
+  content: '';
+  display: block;
+  width: 37px;
+  height: 35px;
+  background: url(../img/notice_icon.png) no-repeat center center;
+  background-size: 37px auto;
+  position: absolute;
+  left: 4.4%;
+  top: 50%;
+  transform: translateY(-45%);
+}
+#wrap #main #section2 .container .slide_view .slide_wrap{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#wrap #main #section2 .container .slide_view .slide_wrap .slide{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  padding: 0 82px 0 60px;
+}
+#wrap #main #section2 .container .slide_view .slide_wrap .slide div{
+  position: relative;
+  width: 50%;
+  display: flex;
+  padding: 0 45px 0 75px;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  cursor: default;
+}
+#wrap #main #section2 .container .slide_view .slide_wrap .slide div a{
+  cursor: default;
+}
+#wrap #main #section2 .container .slide_view .slide_wrap .slide div a.txt{
+  width: calc(100% - 90px);
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#wrap #main #section2 .container .slide_view .slide_wrap .slide div a.detail_btn{
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 50%;
+  margin-top: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: url(../img/plus_i.png) no-repeat center center;
+  background-size: 17px auto;
+}
+#wrap #main #section2 .container .slide_view .slide_wrap .slide div span{
+  width: 90px;
+  text-align: right;
+}
+/* ===================== section2 end ===================== */
+/* ==================== section3 start ==================== */
+#wrap #main #section3{
+  width: 100%;
+  height: 855px;
+  padding: 90px 0;
+}
+#wrap #main #section3 .container{
+  position: relative;
+  width: 100%;
+}
+
+/* s3 Title */
+#wrap #main #section3 .container .sec3Title{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 48px;
+  opacity: 0;
+}
+#wrap #main #section3.show .container .sec3Title{
+  animation: s3Ani1 1.7s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s3Ani1{
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#wrap #main #section3 .container .sec3Title h2{
+  display: inline-block;
+  width: 100%;
+}
+#wrap #main #section3 .container .sec3Title h2 img{
+  width: 458px;
+}
+
+
+/* s3 Slider */
+#wrap #main #section3 .container .sec3_slide_container{
+  position: relative;
+  width: 100%;
+  opacity: 0;
+}
+#wrap #main #section3.show .container .sec3_slide_container{
+  animation: s3Ani2 1.5s cubic-bezier(.65,-0.61,.24,1.79);
+   opacity: 1;
+}
+@keyframes s3Ani2{
+  0%{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap{
+  position: relative;
+  display: flex;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide{
+  position: relative;
+  width: 467px;
+  display: flex;
+  flex-shrink: 0;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide a{
+  width: 100%;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide1 a .img_outline{
+  background: url(../img/s3s1.jpg) no-repeat 50% 0;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide2 a .img_outline{
+  background: url(../img/s3s2.jpg) no-repeat 50% 0;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide3 a .img_outline{
+  background: url(../img/s3s3.jpg) no-repeat 50% 0;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide4 a .img_outline{
+  background: url(../img/s3s4.jpg) no-repeat 50% 0;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide5 a .img_outline{
+  background: url(../img/s3s5.jpg) no-repeat 50% 0;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide6 a .img_outline{
+  background: url(../img/s3s6.jpg) no-repeat 50% 0;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide7 a .img_outline{
+  background: url(../img/s3s7.jpg) no-repeat 50% 0;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide8 a .img_outline{
+  background: url(../img/s3s8.jpg) no-repeat 50% 0;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide a .img_outline{
+  background-size: auto 517px;
+  padding-top: 517px;
+  transition: .3s;
+  outline: 1px solid transparent;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide a:hover .img_outline{
+  outline: 1px solid rgba(248, 244, 190, 0.3);
+  outline-offset: -12px;
+}
+/* s3 Slide txt */
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide a .txt{
+  padding-top: 48px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_wrap .slide a .txt p{
+  display: inline-block;
+}
+
+
+/* s3 Prev & Next Button */
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_prev_box{
+  position: absolute;
+  z-index: 3;
+  left: 0%;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_prev_box .s3_prev_btn{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/menu_prev.png) no-repeat center center;
+  background-size: 20.5px 34px;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_next_box{
+  position: absolute;
+  z-index: 3;
+  right: 0%;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+}
+#wrap #main #section3 .container .sec3_slide_container .sec3_slide_view .s3_next_box .s3_next_btn{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/menu_next.png) no-repeat center center;
+  background-size: 20.5px 34px;
+}
+
+
+/* ================= Page Box ================= */
+#wrap #main #section3 .container .sec3_page_box{
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  font-family: 'Titillium Web',Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  width: 316px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+#wrap #main #section3.show .container .sec3_page_box {
+  animation: s3Ani2 1.5s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+/* s3 Now Number */
+#wrap #main #section3 .container .sec3_page_box .num{
+  width: 40px;
+}
+#wrap #main #section3 .container .sec3_page_box .num .now{
+  display: inline-block;
+}
+#wrap #main #section3 .container .sec3_page_box .num p{
+  display: inline-block;
+}
+#wrap #main #section3 .container .sec3_page_box .num .total_length{
+  display: inline-block;
+}
+
+/* s3 Indicator  */
+#wrap #main #section3 .container .sec3_page_box .sec3_indi{
+  width: 255px;
+  display: flex;
+}
+#wrap #main #section3 .container .sec3_page_box .sec3_indi ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#wrap #main #section3 .container .sec3_page_box .sec3_indi ul li{
+  display: flex;
+}
+#wrap #main #section3 .container .sec3_page_box .sec3_indi ul li a{
+  display:block;
+  width: 14px;
+  height: 14px;
+  background: #d4d4d4;
+  border-radius: 50%;
+}
+#wrap #main #section3 .container .sec3_page_box .sec3_indi ul li a.active{
+  background: #572a31;
+}
+
+/* s3 Play & Pause Button  */
+#wrap #main #section3 .container .sec3_page_box .play_box{
+  display: flex;
+  width: 30px;
+  height: 100%;
+}
+#wrap #main #section3 .container .sec3_page_box .play_box span{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+}
+#wrap #main #section3 .container .sec3_page_box .play_box span a{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#wrap #main #section3 .container .sec3_page_box .play_box span a.show{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===================== section3 end ===================== */
+/* ==================== section4 start ==================== */
+#wrap #main #section4{
+  width: 100%;
+  padding: 105px 0 95px 0;
+  background: url(../img/section4_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+#wrap #main #section4 .container{
+  width: 100%;
+}
+#wrap #main #section4 .container .wrap{
+  width: 50%;
+  margin: 0 0 0 auto;
+  padding-left: 34px;
+  color: #572a31;
+}
+/* s4 Title txt*/
+#wrap #main #section4 .container .wrap .title{
+  width: 100%;
+}
+#wrap #main #section4 .container .wrap .title .top{
+  width: 100%;
+}
+#wrap #main #section4 .container .wrap .title .top h2{
+  width: 100%;
+  font-size: 48px;
+  letter-spacing: -3px;
+  line-height: 126%;
+  opacity: 0;
+  white-space: nowrap;
+}
+#wrap #main #section4.show .container .wrap .title .top h2{
+  animation: s4Ani1 2s cubic-bezier(.65,-0.61,.24,1.79) ;
+  opacity: 1;
+}
+@keyframes s4Ani1{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  60%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#wrap #main #section4 .container .wrap .title .top img{
+  padding: 20px 0 40px;
+  opacity: 0;
+}
+#wrap #main #section4.show .container .wrap .title .top img{
+  animation: s4Ani2 2s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s4Ani2{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  10%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* s4 Sub Title txt*/
+#wrap #main #section4 .container .wrap .title .bottom{
+  width: 100%;
+  opacity: 0;
+}
+#wrap #main #section4.show .container .wrap .title .bottom{
+  animation: s4Ani3 2s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s4Ani3{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  20%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  80%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#wrap #main #section4 .container .wrap .title .bottom p{
+  width: 100%;
+  font-size: 24px;
+  letter-spacing: -1.3px;
+  font-weight: 500;
+  line-height: 170%;
+  white-space: nowrap;
+}
+
+/* s4 Quick Banner */
+#wrap #main #section4 .container .wrap .quick_banner{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 52px;
+}
+
+#wrap #main #section4 .container .wrap .quick_banner span{
+  width: 215px;
+  height: 60px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  letter-spacing: -1px;
+  opacity: 0;
+}
+#wrap #main #section4.show .container .wrap .quick_banner span:nth-child(1){
+  animation: s4Ani4 2s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s4Ani4{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  30%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#wrap #main #section4.show .container .wrap .quick_banner span:nth-child(2){
+  animation: s4Ani5 2s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s4Ani5{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  40%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  95%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#wrap #main #section4.show .container .wrap .quick_banner span:nth-child(3){
+  animation: s4Ani6 2s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s4Ani6{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#wrap #main #section4 .container .wrap .quick_banner span:first-child{
+  background: #572a31;
+}
+#wrap #main #section4 .container .wrap .quick_banner span a{
+  display: block;
+  font-size: 24px;
+  color: #572a31;
+  line-height: 54px;
+}
+#wrap #main #section4 .container .wrap .quick_banner span:first-child a{
+  color: #fff;
+}
+/* ===================== section4 end ===================== */
+/* ==================== section5 start ==================== */
+#wrap #main #section5{
+  width: 100%;
+  height: 861px;
+  padding: 90px 0 95px 0;
+}
+#wrap #main #section5 .container{
+  position: relative;
+  width: 100%;
+}
+
+
+/* s6 Title */
+#wrap #main #section5 .container .title{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 48px;
+  opacity: 0;
+}
+#wrap #main #section5.show .container .title{
+  animation: s5Ani1 1.7s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s5Ani1{
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#wrap #main #section5 .container .title h2{
+  display: inline-block;
+  width: 100%;
+  max-width: 558px;
+}
+#wrap #main #section5 .container .title h2 img{
+  width: 100%;
+
+}
+
+
+
+/* s6 Slider */
+#wrap #main #section5 .container .s5_slide_container{
+  position: relative;
+  width: 100%;
+  opacity: 0;
+}
+#wrap #main #section5.show .container .s5_slide_container{
+  animation: s5Ani2 1.5s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s5Ani2{
+  0%{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap{
+  position: relative;
+  display: flex;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide{
+  position: relative;
+  width: 467px;
+  display: flex;
+  flex-shrink: 0;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide a{
+  width: 100%;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide1 a .img_bg{
+  background: url(../img/s5s1.jpg) no-repeat 50% 0;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide2 a .img_bg{
+  background: url(../img/s5s2.jpg) no-repeat 50% 0;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide3 a .img_bg{
+  background: url(../img/s5s3.jpg) no-repeat 50% 0;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide4 a .img_bg{
+  background: url(../img/s5s4.jpg) no-repeat 50% 0;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide5 a .img_bg{
+  background: url(../img/s5s5.jpg) no-repeat 50% 0;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide a .img_bg{
+  background-size: auto 517px;
+  padding-top: 517px;
+  transition: .3s;
+  outline: 1px solid transparent;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide a:hover .img_bg{
+  outline: 1px solid rgba(248, 244, 190, 0.3);
+  outline-offset: -12px;
+}
+/* s6 Slide txt */
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide a .txt{
+  padding-top: 48px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_slide_wrap .slide a .txt p{
+  display: inline-block;
+}
+
+/* s6 Prev & Next Button */
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_prev_box{
+  position: absolute;
+  z-index: 3;
+  left: 0%;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_prev_box .s5_prev_btn{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/menu_prev.png) no-repeat center center;
+  background-size: 20.5px 34px;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_next_box{
+  position: absolute;
+  z-index: 3;
+  right: 0%;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+}
+#wrap #main #section5 .container .s5_slide_container .s5_slide_view .s5_next_box .s5_next_btn{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/menu_next.png) no-repeat center center;
+  background-size: 20.5px 34px;
+}
+
+/* ================= Page Box ================= */
+#wrap #main #section5 .container .s5_page_box{
+  position: absolute;
+  right: 1%;
+  top: 1.5%;
+  font-family: 'Titillium Web',Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  width: 226px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+#wrap #main #section5.show .container .s5_page_box{
+  animation: s5Ani2 1.5s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+/* s6 Now Number */
+#wrap #main #section5 .container .s5_page_box .num{
+  width: 40px;
+}
+#wrap #main #section5 .container .s5_page_box .num .now{
+  display: inline-block;
+}
+#wrap #main #section5 .container .s5_page_box .num p{
+  display: inline-block;
+}
+#wrap #main #section5 .container .s5_page_box .num .total_length{
+  display: inline-block;
+}
+
+/* s6 Indicator  */
+#wrap #main #section5 .container .s5_page_box .s5_indi{
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+#wrap #main #section5 .container .s5_page_box .s5_indi span{
+  display: flex;
+}
+#wrap #main #section5 .container .s5_page_box .s5_indi span a{
+  display:block;
+  width: 14px;
+  height: 14px;
+  background: #d4d4d4;
+  border-radius: 50%;
+}
+#wrap #main #section5 .container .s5_page_box .s5_indi span a.active{
+  background: #572a31;
+}
+
+/* s6 Play & Pause Button  */
+#wrap #main #section5 .container .s5_page_box .play_box{
+  display: flex;
+  width: 30px;
+  height: 100%;
+}
+#wrap #main #section5 .container .s5_page_box .play_box span{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+}
+#wrap #main #section5 .container .s5_page_box .play_box span a{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#wrap #main #section5 .container .s5_page_box .play_box span a.show{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+/* ===================== section5 end =====================*/
+/* ==================== section6 start ==================== */
+#wrap #main #section6{
+  width: 100%;
+  height: 730px;
+  padding-bottom: 130px;
+}
+#wrap #main #section6 .container{
+  width: 100%;
+}
+/* s6 Title */
+#wrap #main #section6 .container .title{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 48px;
+  opacity: 0;
+ 
+}
+#wrap #main #section6.show .container .title{
+  animation: s6Ani1 2s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s6Ani1{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#wrap #main #section6 .container .title h2{
+  display: inline-block;
+  max-width: 450px;
+  width: 100%;
+}
+#wrap #main #section6 .container .title h2 img{
+  width: 100%;
+}
+
+/* s6 SNS Banner */
+#wrap #main #section6 .container .sns_banner{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+}
+#wrap #main #section6.show .container .sns_banner{
+  animation: s6Ani2 2.3s cubic-bezier(.65,-0.61,.24,1.79);
+  opacity: 1;
+}
+@keyframes s6Ani2{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#wrap #main #section6 .container .sns_banner span{
+  width: 20%;
+  height: 258px;
+  overflow: hidden;
+}
+#wrap #main #section6 .container .sns_banner span a{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section6 .container .sns_banner span a img{
+  position: absolute;
+  left: 0;
+  top: -4.2%;
+  width: 100%;
+  transition: .3s ease-in-out;
+}
+#wrap #main #section6 .container .sns_banner span:nth-child(7) a img{
+  top: 4%;
+  transform: scale(1.085)
+}
+#wrap #main #section6 .container .sns_banner span:nth-child(9) a img{
+  top: -6.8%;
+}
+#wrap #main #section6 .container .sns_banner span a:hover img{
+  transform: scale(1.05);
+}
+#wrap #main #section6 .container .sns_banner span:nth-child(7) a:hover img{
+  transform: scale(1.15)
+}
+/* =========================== main end =========================== */

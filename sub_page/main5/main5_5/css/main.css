@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+#main{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+#main #section1{
+  width: 100%;
+  height: 480px;
+  background: url(../img/sv_5.jpg) no-repeat center center;
+  background-size: cover;
+  margin-top: 137px;
+}
+#main #section1 .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: s1Ani1 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@keyframes s1Ani1{
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY( 0px);
+  }
+}
+#main #section1 .title h2{
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Roboto','Noto Sans KR';
+}
+
+
+
+#main #section2{
+  width: 100%;
+  background: #efefef;
+}
+#main #section2 .container{
+  width: 100%;
+}
+#main #section2 .container .gap{
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+#main #section2 .container .gap span{
+  width: 100%;
+  height: 55px;
+}
+#main #section2 .container .gap span a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 52px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+}
+#main #section2 .container .gap span a.active{
+  background: #572a31;
+  color: #fff;
+}
+
+
+
+#main #section3{
+  width: 100%;
+}
+#main #section3 .container{
+  width: 100%;
+}
+#main #section3 .container .bread_crumb{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  line-height: 12px;
+  padding-top: 20px;
+}
+#main #section3 .container .bread_crumb span{
+  position: relative;
+  font-family: 'Roboto','Noto Sans KR';
+  font-size: 12px;
+  padding: 1px 12px 0px;
+  display: flex;
+  align-items: flex-start;
+  color: #999;
+}
+#main #section3 .container .bread_crumb span:last-child{
+  padding: 1px 0 0 12px;
+}
+#main #section3 .container .bread_crumb span:not(:last-child)::after{
+  content: '';
+  position: absolute;
+  right: -2%;
+  top: 48%;
+  margin-top: -4.5px;
+  background: url(../img/bread_crumbs_arw.png) no-repeat center center;
+  background-size: auto 9px;
+  display: block;
+  width: 5px;
+  height: 9px;
+}
+#main #section3 .container .bread_crumb span:nth-child(2){
+  font-weight: 400;
+}
+#main #section3 .container .bread_crumb span img{
+  width: 12px;
+  height: 10px;
+}
+
+#main #section3 .container .title{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 44px 0 80px 0;
+  animation: s3Ani1 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#main #section3 .container .title h2{
+  font-size: 36.5px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+@keyframes s3Ani1{
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY( 0px);
+  }
+}
+
+
+
+#main #sub_section{
+  width: 100%;
+  margin: 30px 0 50px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+#main #sub_section .sub_title_link{
+  width: 100%;
+  display: flex;
+  max-width: 720px;
+}
+#main #sub_section .sub_title_link span{
+  display: inline-block;
+  width: 33.3333%;
+  padding: 0 40px;
+  line-height: 68px;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+}
+#main #sub_section .sub_title_link span.active{
+  border-bottom: 3px solid #572a31;
+}
+#main #sub_section .sub_title_link span a{
+  font-size: 23.8px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+#main #sub_section .sub_title_link span.active a{
+  color: #572a31;
+}
+
+
+
+
+#main #section4{
+  width: 100%;
+  padding: 0 0 120px;
+}
+#main #section4 .container{
+  width: 100%;
+}
+#main #section4 .container .content_wrap{
+  width: 100%;
+}
+#main #section4 .container .content_wrap .content_list{
+  display: none;
+}
+#main #section4 .container .content_wrap .content_list.show{
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+#main #section4 .container .content_wrap .content_list .list_item{
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+#main #section4 .container .content_wrap .content_list .list_item a{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+#main #section4 .container .content_wrap .content_list .list_item a::after{
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background: rgba(255, 255, 255, .8) url(../img/insta_i.png) no-repeat center center;
+  background-size: 25px auto;
+  border-radius: 50%;
+}
+#main #section4 .container .content_wrap .content_list .list_item.blog a::after{
+  background-image: url(../img/blog_i.png);
+}
+#main #section4 .container .content_wrap .content_list .list_item a .img_box::before{
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+#main #section4 .container .content_wrap .content_list .list_item a .txt_box{
+  width: 100%;
+  padding: 25px 15px 50px;
+}
+#main #section4 .container .content_wrap .content_list .list_item a .txt_box p{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  color: #333;
+}
+#main #section4 .container .content_wrap .more_view{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 0;
+}
+#main #section4 .container .content_wrap .more_view .more_view_btn{
+  position: relative;
+  font-size: 16.5px;
+  width: 100%;
+  height: 56px;
+  padding-left: 18px;
+  color: #555;
+  background: #e6e6e6;
+  font-weight: 500;
+  transition: background .3s,color .3s;
+  cursor: pointer;
+}
+#main #section4 .container .content_wrap .more_view .more_view_btn:hover{
+  color: #fff;
+  background: #222;
+}
+#main #section4 .container .content_wrap .more_view .more_view_btn i{
+  position: absolute;
+  left: 48.2%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 10px;
+}
+#main #section4 .container .content_wrap .content_list .list_item a .line{
+  position: absolute;
+  display: block;
+  background: #333;
+  transition: width .3s ,height .3s;
+}
+#main #section4 .container .content_wrap .content_list .list_item a .t-line{
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+}
+#main #section4 .container .content_wrap .content_list .list_item a .r-line{
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 0;
+}
+#main #section4 .container .content_wrap .content_list .list_item a .b-line{
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+}
+#main #section4 .container .content_wrap .content_list .list_item a .l-line{
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+}
+#main #section4 .container .content_wrap .content_list .list_item a:hover .t-line,
+#main #section4 .container .content_wrap .content_list .list_item a:hover .b-line{
+  width: 100%;
+}
+#main #section4 .container .content_wrap .content_list .list_item a:hover .r-line,
+#main #section4 .container .content_wrap .content_list .list_item a:hover .l-line{
+  height: 100%;
+}
